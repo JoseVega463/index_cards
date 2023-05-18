@@ -10,43 +10,134 @@
     <body>
         <!-- <div class="centerThis"> -->
         <!-- <div class="startText1"></div> -->
-        <div class="base">
-            <div class="card">
-                <div class="face front">
-                    <h2>1st U.S. President</h2>
+        <div class="Name">
+            <div class="IndeX">Index.io</div>
+        </div>
+        <div class="dropDown">
+            <h1>Home</h1>
+            <h1>Your card decks</h1>
+            <h1>Make new deck</h1>
+            <h1>Message us</h1>
+        </div>
+        <div class="slideShow">
+            <div class="slideshow-container">
+                <div class="slide">
+                  <img src="/Index123/1227176-200.png" alt="Image 1">
                 </div>
-                <div class="face back">
-                    <h2>Washington</h2>
+                <div class="slide">
+                  <img src="/Index123/1080939.png" alt="Image 2">
+                </div>
+                <!-- Add more slides as needed -->
+              </div>
+              <style>
+                .slideshow-container {
+                  position: relative;
+                  width: 100%;
+                  height: 400px; /* Adjust height as needed */
+                  overflow: hidden;
+                }
+
+                .slide {
+                  position: absolute;
+                  width: 100%;
+                  height: 100%;
+                  opacity: 0;
+                  transition: opacity 0.5s ease-in-out;
+                }
+
+                .slide.active {
+                  opacity: 1;
+                }
+              </style>
+              <script>
+                var slides = document.querySelectorAll('.slide');
+                var currentSlide = 0;
+
+                function showSlide(index) {
+                  // Remove the "active" class from all slides
+                  for (var i = 0; i < slides.length; i++) {
+                    slides[i].classList.remove('active');
+                  }
+
+                  // Add the "active" class to the current slide
+                  slides[index].classList.add('active');
+                }
+
+                function nextSlide() {
+                  currentSlide = (currentSlide + 1) % slides.length;
+                  showSlide(currentSlide);
+                }
+
+                // Call nextSlide function every 3 seconds (adjust timing as needed)
+                setInterval(nextSlide, 3000);
+              </script>
+
+        </div>
+        <div class="container">
+            <div class="base">
+                <div class="card">
+                    <div class="face front">
+                        <h2>Who is the voice actor of Jake the Dog</h2>
+                    </div>
+                    <div class="face back">
+                        <h2>John DiMaggio</h2>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="base">
-            <div class="card">
-                <div class="face front">
-                    <h2>1st U.S. President</h2>
-                </div>
-                <div class="face back">
-                    <h2>Washington</h2>
-                </div>
-            </div>
-        </div>
-        <div class="base">
-            <div class="card">
-                <div class="face front">
-                    <h2>1st U.S. President</h2>
-                </div>
-                <div class="face back">
-                    <h2>Washington</h2>
+            <div class="base">
+                <div class="card">
+                    <div class="face front">
+                        <h2>What is the element for gold</h2>
+                    </div>
+                    <div class="face back">
+                        <h2>Au</h2>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="base">
-            <div class="card">
-                <div class="face front">
-                    <h2>1st U.S. President</h2>
+            <div class="base">
+                <div class="card">
+                    <div class="face front">
+                        <h2>Who is the character underneath</h2>
+                    </div>
+                    <div class="face back">
+                        <h2>Courage the cowardly dog</h2>
+                    </div>
                 </div>
-                <div class="face back">
-                    <h2>Washington</h2>
+                <div class="character">
+                    <img src="/Index123/Courage_cartoon_network.png" alt="Description of the image">
+                </div>
+            </div>
+            <div class="base">
+                <div class="card">
+                    <div class="face front">
+                        <h2>What mobile game is shown underneath</h2>
+                    </div>
+                    <div class="face back">
+                        <h2>Infinity Blade 3</h2>
+                    </div>
+                </div>
+                <div class="character">
+                    <img src="/Index123/c65eb04b6ecef620e52c1a728599ef40_400x400.png" alt="Description of the image">
+                </div>
+            </div>
+            <div class="base">
+                <div class="card">
+                    <div class="face front">
+                        <h2>Who made the song Stronger</h2>
+                    </div>
+                    <div class="face back">
+                        <h2>Kanye, Daft Punk</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="base">
+                <div class="card">
+                    <div class="face front">
+                        <h2>Who made the song Till I Colapse</h2>
+                    </div>
+                    <div class="face back">
+                        <h2>Eminem</h2>
+                    </div>
                 </div>
             </div>
         </div>
@@ -57,14 +148,14 @@
                 <div class="face back1">
                     <h2>Washington</h2>
                 </div> -->
-            </div>
-        </div>
+            <!-- </div>
+        </div> -->
         <!-- <
         <div class="startText3"><h1>card 3!</h1></div>
         <div class="startText4"><h1>card 4!</h1></div>
         <div class="startText5"><h1>card 5!</h1></div>
         <div class="startText6"><h1>card 6!</h1></div> -->
-            </div>
-        </div>
+            <!-- </div>
+        </div> -->
     </body>
 </html>
